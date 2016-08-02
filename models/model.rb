@@ -1,4 +1,10 @@
 #basic calculator
+def add(number1, number2)
+  number1+number2
+end
+
+#define a new method called multiply. define @product inside of your application controller
+
 
 #life calculator
 def years_alive(birthday)
