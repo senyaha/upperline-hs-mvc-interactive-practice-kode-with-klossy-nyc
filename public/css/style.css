@@ -1,0 +1,65 @@
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+
+body, html {
+  margin: 0;
+  width: 100% !important;
+  font-family: "Playfair Display"
+}
+
+.container {
+  background: #EE6E73;
+  position: absolute;
+  height:500%;
+  width: 99%;
+  top: 0;
+}
+
+h1 {
+    font-family:"Titillium Web";
+    text-align: center;
+}
+
+.big {
+  font-size: 250%;
+  color: black;
+  font-family: "Playfair Display"
+}
+
+.you_are_a {
+  background: white;
+  font-family:"Playfair Display";
+/*   position: absolute;
+  top: 0;
+  left: 0; */
+  width: 65%;
+  border: dashed 2px black;
+  padding: 1%;
+/*   display: inline; */
+/*   margin: 50px;
+  border: 60px; */
+}
+
+.answer {
+  font-family: "Playfair Display"
+}
+
+
+  .quiz_box {
+  border: dashed 2px black;
+  width: 65%;
+  padding: 1%;
+  margin: 2% 17.5%;
+  background: #FCFCFC;
+  font-family: "Playfair Display" !important;
+}
+
+/* .quiz_box h1.big, .quiz_boz h1.playfair {
+  font-family: "Playfair Display";
+} */
+
+.playfair {
+  font-family: "Playfair Display" !important;
+}

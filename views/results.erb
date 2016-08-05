@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-  </head>
+	<head>
+		<title>Helios by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css"/>
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+	</head>
+
   <body>
-    <h1> The sum of your numbers is <%=@sum%> </h1>
-    <h1> You have been alive for <%=@days_alive%> days!</h1>
+    <div style="padding-left: 25%; width: 100%;" class="container">
+       <div class="you_are_a">
+        <h1 class = "answer"> You are an <%= @answer %>. </h1>
+      </div>
+      <% @final_array.each do |item| %>
+        <% if @answer == "introvert" %>
+         <div style="border: dashed 2px black" class="col s12 m7">
+            <h2 class="header"><%= item[:title] %></h2>
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src= <%= item[:pic].to_s %> alt="item_pic">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>The address is <%= item[:address] %></p>
+                  <br>
+                  <p><%= item[:summary] %></p>
+                </div>
+                <div class="card-action">
+                  <a href=<%= item[:link] %>>Here is the link to their website</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        <% elsif @answer == "ambivert" %>
+         <div class="col s12 m7">
+            <h2 class="header"><%= item[:title] %></h2>
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src= <%= item[:pic].to_s %> alt="item_pic">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>The address is <%= item[:address] %></p>
+                  <br>
+                  <p><%= item[:summary] %></p>
+                </div>
+                <div class="card-action">
+                  <a href=<%= item[:link] %>>Here is the link to their website</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        <% elsif @answer == "extrovert" %>
+
+         <div class="col s12 m7">
+            <h2 class="header"><%= item[:title] %></h2>
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src= <%= item[:pic].to_s %> alt="item_pic">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>The address is <%= item[:address] %></p>
+                  <br>
+                  <p><%= item[:summary] %></p>
+                </div>
+                <div class="card-action">
+                  <a href=<%= item[:link] %>>Here is the link to their website</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+  <footer>
+	<a href="#banner" class="button circled scrolly">Home</a>
+	</footer>
+    </div>
   </body>
 </html>
