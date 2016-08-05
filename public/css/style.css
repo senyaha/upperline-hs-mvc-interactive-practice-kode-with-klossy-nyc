@@ -63,3 +63,7 @@ h1 {
 .playfair {
   font-family: "Playfair Display" !important;
 }
+
+#home_button {
+  margin-left: 25%;
+}

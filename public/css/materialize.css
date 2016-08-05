@@ -4593,12 +4593,10 @@ small {
   height: 100%;
   max-height: none;
   overflow: visible;
-  border: dashed 2px black;
 }
 
 .card.horizontal.small .card-image img, .card.horizontal.medium .card-image img, .card.horizontal.large .card-image img {
   height: 100%;
-  border: dashed 2px black;
 }
 
 .card.horizontal .card-image {

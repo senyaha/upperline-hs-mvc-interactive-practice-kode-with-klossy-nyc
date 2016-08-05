@@ -22,7 +22,7 @@
       </div>
       <% @final_array.each do |item| %>
         <% if @answer == "introvert" %>
-         <div style="border: dashed 2px black" class="col s12 m7">
+         <div class="col s12 m7">
             <h2 class="header"><%= item[:title] %></h2>
             <div class="card horizontal">
               <div class="card-image">
@@ -82,7 +82,7 @@
         <% end %>
       <% end %>
   <footer>
-	<a href="#banner" class="button circled scrolly">Home</a>
+<a id = "home_button" class="waves-effect waves-light btn-large black"><i class="material-icons left"></i>Home</a>
 	</footer>
     </div>
   </body>
